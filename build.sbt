@@ -2,17 +2,17 @@
 // http://www.scala-sbt.org/0.13/docs/index.html
 name := "mypackage"
 organization := "EronWright"
-version := "0.0.11"
+version := "0.0.12"
 
 // Scala
 scalaVersion := "2.10.4"
 crossPaths := false  // suppress the scala version number suffix on artifacts
 
 // DL4J
-libraryDependencies ++= Seq(
-    "org.deeplearning4j" % "dl4j-spark-ml" % "0.0.3.3.4.alpha1-SNAPSHOT",
-    "org.nd4j" % "nd4j-jblas" % "0.0.3.5.5.5-SNAPSHOT"
-)
+//libraryDependencies ++= Seq(
+//    "org.deeplearning4j" % "dl4j-spark-ml" % "0.0.3.3.4.alpha1-SNAPSHOT",
+//    "org.nd4j" % "nd4j-jblas" % "0.0.3.5.5.5-SNAPSHOT"
+//)
 
 // Spark Packaging
 credentials += Credentials(Path.userHome / ".ivy2" / ".spcredentials")
